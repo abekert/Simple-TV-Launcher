@@ -96,6 +96,9 @@ public class Prefs {
     }
     public void setShowSourceBtn(boolean v) { sp.edit().putBoolean("srcHide", !v).apply(); }
 
+    public boolean showInputsRow() { return sp.getBoolean("showInputsRow", false); }
+    public void setShowInputsRow(boolean v) { sp.edit().putBoolean("showInputsRow", v).apply(); }
+
     private static long hdmiAt;
     private static boolean hdmiVal;
 
